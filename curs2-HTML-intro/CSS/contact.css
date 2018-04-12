@@ -1,0 +1,170 @@
+body{
+  background:#3333cc;
+  font-family: 'Merriweather', serif;
+}
+main{
+  width:700px;
+  margin:100px auto;
+  background-color:green;
+  padding:10px;
+  background:linear-gradient(to right, #EAECC6, #2BC0E4);
+}
+div{
+  float:left;
+}
+form{
+  float:right;
+}
+input{
+    border-radius: 3px;
+    border-width: 1px;
+    border-color: rgb(204, 204, 204);
+    color: rgb(69, 69, 69);
+    font-size: 16px;
+    padding: 8px;
+    margin-bottom: 15px;
+    font-family: Arial;
+}
+textarea{
+    border-radius: 3px;
+    border-width: 1px;
+    border-color: rgb(204, 204, 204);
+    color: rgb(69, 69, 69);
+    padding: 8px;
+    margin-bottom: 15px;
+    font-size: 16px;
+    font-family: Arial;
+    width:250px;
+    height:100px;
+    min-height:100px;
+    max-height:200px;
+    min-width:250px;
+    max-width:250px;
+}
+.clearfix::after {
+    content: "";
+    clear: both;
+    display: block;
+}
+#mess{
+  min-height:200px;
+  overflow: auto;
+  
+}
+
+.callMe{
+  text-align:center;
+}
+
+
+@import url(https://fonts.googleapis.com/css?family=Gilda+Display);
+
+.error {
+  text-align: center;
+  font-family: 'Gilda Display', serif;
+  font-size: 50px;
+  font-style: italic;
+  text-align: center;
+  width: 300px;
+  height: 60px;
+  line-height: 60px;
+  margin: auto;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: -210px;
+  right: 0;
+  animation: noise 2s linear infinite;
+  overflow: default;
+}
+
+.error:after {
+  content: 'Call me';
+  font-family: 'Gilda Display', serif;
+  font-size: 70px;
+  font-style: italic;
+  text-align: center;
+  width: 350px;
+  height: 60px;
+  line-height: 60px;
+  margin: auto;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: -150px;
+  right: 0;
+  opacity: 0;
+  color: blue;
+  animation: noise-1 .2s linear infinite;
+}
+
+.info {
+  text-align: center;
+  font-family: 'Gilda Display', serif;
+  font-size: 25px;
+  font-style: italic;
+  text-align: center;
+  width: 200px;
+  height: 60px;
+  line-height: 60px;
+  margin: auto;
+  position: absolute;
+  top: 140px;
+  bottom: 0;
+  left: -150px;
+  right: 0;
+  animation: noise-3 1s linear infinite;
+}
+
+.error:before {
+  content: 'Call me';
+  font-family: 'Gilda Display', serif;
+  font-size: 70px;
+  font-style: italic;
+  text-align: center;
+  width: 300px;
+  height: 60px;
+  line-height: 60px;
+  margin: auto;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: -150px;
+  right: 0;
+  opacity: 0;
+  color: red;
+  animation: noise-2 .2s linear infinite;
+}
+
+@keyframes noise-1 {
+  0%, 20%, 40%, 60%, 70%, 90% {opacity: 0;}
+  10% {opacity: .1;}
+  50% {opacity: .5; left: -6px;}
+  80% {opacity: .3;}
+  100% {opacity: .6; left: 2px;}
+}
+
+@keyframes noise-2 {
+  0%, 20%, 40%, 60%, 70%, 90% {opacity: 0;}
+  10% {opacity: .1;}
+  50% {opacity: .5; left: 6px;}
+  80% {opacity: .3;}
+  100% {opacity: .6; left: -2px;}
+}
+
+@keyframes noise {
+  0%, 3%, 5%, 42%, 44%, 100% {opacity: 1; transform: scaleY(1);}  
+  4.3% {opacity: 1; transform: scaleY(1.7);}
+  43% {opacity: 1; transform: scaleX(1.5);}
+}
+
+@keyframes noise-3 {
+  0%,3%,5%,42%,44%,100% {opacity: 1; transform: scaleY(1);}
+  4.3% {opacity: 1; transform: scaleY(4);}
+  43% {opacity: 1; transform: scaleX(10) rotate(60deg);}
+}
+
+.keret{
+  width:300px;
+  height:300px;
+}

@@ -1,0 +1,68 @@
+.boxes{
+	width:570px;
+}
+
+.box-model{
+	padding:15px 10px 5px 30px;
+	border: solid 5px green;
+	margin:20px;
+	width:150px;
+	box-sizing: border-box;
+	display: inline-block;
+}
+
+.box-image{
+	width:40px;
+	height:40px;
+	background-color:green;
+	margin:5px;
+	border: 1px solid black;
+}
+
+.box-image2{
+	width:40px;
+	height:40px;
+	background-color:green;
+	float:right;
+}
+
+.clearfix::after{
+	content:'';
+	display:block;
+	clear:both;
+}
+
+.pull-left{
+	float:left;
+}
+
+.pull-right{
+	float:right;
+}
+
+.pos-relative{
+	position:relative;
+}
+
+.pos-absolute{
+	position:absolute;
+}
+
+.pos-fixed{
+	position:fixed;
+}
+
+.box-1{
+	top:0;
+	left:0;
+}
+
+.box-2{
+	right:0;
+	bottom:0;
+}
+
+.box-3{
+	left:0;
+	bottom:0;
+}

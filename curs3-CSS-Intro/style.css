@@ -1,0 +1,68 @@
+ul{
+  background:grey;
+}
+#navbar{
+  border: 1px black solid;
+}
+.box{
+  border: solid 1px pink;
+}
+h1 {
+  color:red;
+}
+.im{
+  height:150px;
+  width:150px;
+}
+.*{
+	color:pink;
+	}
+
+div p a span{
+  font-style:italic;
+  font-weight:bold;
+  color:pink;
+}
+
+/* p a{
+  color:blue;
+}
+
+div > a{
+  color:green;
+}
+
+p>span{
+  color:pink;
+} */
+
+[id]{
+	border: 5px solid grey;
+}
+
+[type="text"]{
+	border: 2px solid green;
+}
+
+
+
+
+
+a:link{
+	color:purple;
+}
+a:visited{
+	color:darkgray;
+}
+a:hover{
+	color:green;
+	font-weight:bold;
+}
+a:active{
+	color:blue;
+}
+
+a::after{
+	content:"8 martie";
+	display:block;
+}

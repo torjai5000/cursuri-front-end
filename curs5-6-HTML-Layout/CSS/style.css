@@ -1,0 +1,171 @@
+body{
+	font-family: 'Roboto Slab';
+	margin:0;
+}
+#header{
+	margin-top:20px;
+	margin-bottom:20px;
+}
+#main{
+	margin-top:50px;
+}
+footer{
+	background-color: #2265A9;
+}
+a{
+	color:white;
+	text-decoration: none;
+}
+h1{
+	margin:0;
+	border-right: 2px solid black;
+	padding-right:10px;
+}
+h3{
+	border-bottom:dotted 1px white;
+	padding-bottom:10px;
+}
+.margin-auto{
+	margin:0 auto;
+	width:960px;
+}
+.mar{
+	margin:0 1%;
+}
+.pull-left{
+	float:left;
+}
+.pull-right{
+	float:right;
+}
+.clearfix::after {
+    content: "";
+    clear: both;
+    display: block;
+}
+.navButton{
+	box-sizing: border-box;
+	width:18%;
+	margin:0 1%;
+	height: 60px;
+	background-color: #2265A9;
+	text-align: center;
+	vertical-align: middle;
+	line-height: 60px;
+	font-size: 1.3em;
+}
+#contact{
+	margin:0;
+}
+#slider{
+	height:450px;
+	position:relative;
+	background-color: #BEDAFF;
+	margin:0 1%;
+}
+#text{
+	position:absolute;
+	top:25px;
+	left:25px;
+	width:300px;
+	height:180px;
+	background-color: #2265A9;
+	font-size: 0.9em;
+	padding:10px;
+	color:white;
+}
+#background{
+	position: absolute;
+	top:20px;
+	left:30px;
+	background-color: #31894D;
+	font-size: 130px;
+	color:white;
+	width:900px;
+	text-align: center;
+	transform:skewY(-10deg);
+	border-radius: 25px;
+}
+.slider-btn{
+  position:absolute;
+  right:20px;
+  bottom:-20px;
+  background-color:#2265A9;
+  height:100px;
+  width:650px;
+  font-size:60px;
+  color:white;
+  padding-left:10px;
+  border:none;
+}
+.art1{
+	width: 31.33%;
+	background-color:#E8E8E8;
+}
+.art2{
+	width:64.66%;
+	height:190px;
+	border-bottom:1px dotted black;
+}
+aside{
+	height: 190px;
+	width:31.33%;
+	background-color:#E8E8E8;
+
+}
+.img1{
+	width:240px;
+	height:90px;
+	display:block;
+    margin:auto;
+}
+.img2{
+	width:200px;
+	height:160px;
+}
+.img3{
+	width:174px;
+	height:100px;
+	margin:0 3.3px;
+}
+img{
+	background-color:#3A3B3F;
+	border:ridge white 4px;
+}
+p,h4{
+	text-align:center;
+}
+article a{
+	color:#043675;
+	margin:10px;
+}
+article p{
+	margin:10px;
+}
+.sec2{
+	border-top:dashed 2px black;
+	padding-top:20px;
+}
+section{
+	margin:20px 0;
+}
+article div{
+	width:65%;
+}
+article div h3{
+	margin:0;
+	border-bottom:dotted black 1px;
+}
+aside h2{
+	color:#989898;
+	border-bottom:dashed black 1px;
+}
+aside a{
+	color:#043675;
+	padding-right:40%;
+	border-bottom:solid black 1px;
+}
+footer p{
+	color:white;
+	margin:15px;
+}

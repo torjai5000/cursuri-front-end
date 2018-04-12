@@ -1,0 +1,55 @@
+main{
+  width:750px;
+  border: solid black 1px;
+  margin:0 auto;
+  heigth:450px;
+}
+section{
+  width:50%;
+  float:left;
+}
+form{
+  margin:20px 20px;
+  display:block; 
+}
+aside{
+  float:right;
+  width:50%;
+  height:450px;
+}
+.text{
+  width:95%;
+}
+.maText{
+  margin:20px 0px 20px 20px;
+  display:block; 
+}
+input[type="submit"]{
+  float:right;
+}
+input[type="radio"]{
+  margin-left:80px;
+}
+.clearfix::after {
+    content: "";
+    clear: both;
+    display: block;
+}
+img{
+  margin:20px auto;
+  display:block;
+  width:68%;
+}
+textarea{
+  min-height:100px;
+  max-height:200px;
+}
+.invalid {
+  border: 2px solid #ffdddd;
+}
+#conf{
+  width:750px;
+  margin:0 auto;
+  margin-top:50px;
+  visibility:hidden;
+}
