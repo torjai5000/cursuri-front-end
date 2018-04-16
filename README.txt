@@ -1,0 +1,8 @@
+Tamaska
+
+12.04.2018
+
+
+
+
+AAAAAAARGGHHHHHHH
