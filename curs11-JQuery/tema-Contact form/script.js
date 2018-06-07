@@ -5,7 +5,7 @@ window.addEventListener("load", function() {
   var submit=document.querySelector("input[type='submit']")
   var form=document.querySelector("form")
   var conf=document.getElementById("conf")
-  var spam=document.getElementsByTagName("spam")[0]
+  var span=document.getElementsByTagName("bigBoobs")[0]
   
   var text=[first,last,textarea];
   
@@ -23,7 +23,7 @@ window.addEventListener("load", function() {
       console.log("Message:",textarea.value)
       var gender=document.querySelector('input[name="sex"]:checked');
       console.log("Gender:",gender.value)
-      spam.innerHTML=first.value;
+      span.innerHTML=first.value;
       conf.style.visibility="visible";
     }
   })

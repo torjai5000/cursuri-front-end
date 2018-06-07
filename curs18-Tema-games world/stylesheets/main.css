@@ -1,0 +1,65 @@
+.thumbnail img{
+    width:100%;
+}
+
+.thumbnail{
+    padding:0;
+    padding:9px;
+}
+body{
+  background: linear-gradient(to right, rgb(102, 125, 182), rgb(0, 130, 200), rgb(0, 130, 200), rgb(102, 125, 182));
+}
+#bg{
+  background-color:white;
+  border-radius: 75px;
+}
+
+.caption-full{
+    padding:9px;
+}
+.lead{
+  width:100%;
+  display:block;
+  text-align:center;
+  margin:40px auto;
+  font-size:44px;
+  color:white;
+}
+.lead:hover{
+  color:white;
+  text-decoration:none;
+  font-size:46px;
+  margin-bottom:37.5px;
+}
+
+.btn-warning, .btn-danger{
+  margin:3px;
+}
+
+.change{
+  float:right;
+}
+
+.bodychange{
+  background: linear-gradient(to right, rgb(35, 37, 38), rgb(65, 67, 69), rgb(65, 67, 69), rgb(35, 37, 38));
+}
+.thumbchange{
+  background: linear-gradient(to right, rgb(237, 33, 58), rgb(147, 41, 30));
+}
+.buttonchange{
+  background-color:rgb(35, 37, 38);
+}
+.buttonchange:hover{
+  background-color:grey;
+}
+.buttonchange:focus{
+  background-color:rgb(35, 37, 38);
+}
+.h4change{
+  color:white;
+  font-family: 'Amatic SC', cursive;
+  font-size:2em;
+}
+.imgchange{
+  border-radius: 20%;
+}
