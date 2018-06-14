@@ -21,7 +21,7 @@ games.fetchData().then(function(){
     h4.innerHTML=games.items[i].title;
     div.appendChild(h4);
         var a=document.createElement("a");
-    a.addClass("btn btn-primary");
+    $(a).addClass("btn btn-primary");
     a.innerHTML="More Info"; 
     a.setAttribute("href","http://cursuri-torjai93954079.codeanyapp.com/curs18-Tema-games%20world/pages/show.html?gameId=" + games.items[i]._id);
     a.setAttribute("target","blank");
