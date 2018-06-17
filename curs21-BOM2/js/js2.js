@@ -39,7 +39,7 @@ for(var i=0;i<listGetObj.length;i++){
   var id=document.createElement("p");
   var name=document.createElement("p");
   var img=document.createElement("img");
-  var quantity=document.createElement("p");
+  var quantity=document.createElement("h3");
   var price=document.createElement("p");
   var button=document.createElement("button");
   
@@ -48,8 +48,9 @@ for(var i=0;i<listGetObj.length;i++){
   $(img).attr("src", listGetObj[i].imageUrl);
   quantity.innerHTML="Quantity: "+listGetObj[i].quantity; 
   price.innerHTML="Price: "+listGetObj[i].price; 
-  button.innerHTML="buy";
+  button.innerHTML="Buy";
   $(button).addClass("button"+i);
+  $(quantity).addClass("quantity"+i);
   
   body.appendChild(id);
   body.appendChild(name);
@@ -61,10 +62,17 @@ for(var i=0;i<listGetObj.length;i++){
 
 }
   var buttons=document.getElementsByTagName("button");
+  var quantities=document.getElementsByTagName("h3");
   
   for(let j=0;j<buttons.length;j++){
     buttons[j].addEventListener("click", function(){
       let newQ=list[j].quantity-1;
+      if(newQ!==0){
+      quantities[j].innerHTML="Quantity: "+newQ;
+      }else{
+        quantities[j].innerHTML="Sold Out";
+        $(buttons[j]).attr("disabled", "disabled");
+      }
       console.log(newQ);
       list[j].quantity=newQ;
       if(newQ===0){
