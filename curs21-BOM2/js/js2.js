@@ -50,7 +50,6 @@ for(var i=0;i<listGetObj.length;i++){
   price.innerHTML="Price: "+listGetObj[i].price; 
   button.innerHTML="buy";
   $(button).addClass("button"+i);
-  $(quantity).addClass("quantity"+i);
   
   body.appendChild(id);
   body.appendChild(name);
@@ -61,13 +60,17 @@ for(var i=0;i<listGetObj.length;i++){
 
 
 }
-    var buttons=document.getElementsByTagName("button");
-  for(var j=0;j<buttons.length;j++){
+  var buttons=document.getElementsByTagName("button");
+  
+  for(let j=0;j<buttons.length;j++){
     buttons[j].addEventListener("click", function(){
-    var newQ=listGetObj[j].quantity-1;
-    console.log(newQ);
-    list[j].quantity=newQ;
-    localStorage.setItem("list", JSON.stringify(list));
+      let newQ=list[j].quantity-1;
+      console.log(newQ);
+      list[j].quantity=newQ;
+      if(newQ===0){
+        delete list[j];
+      }
+      localStorage.setItem("list", JSON.stringify(list));
   })
   }
   
