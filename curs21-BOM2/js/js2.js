@@ -33,7 +33,9 @@ var list=[{
 
 localStorage.setItem("list", JSON.stringify(list));
 const listGet=localStorage.getItem("list");
+  console.log(listGet);
 const listGetObj=JSON.parse(listGet);
+  console.log(listGetObj);
 for(var i=0;i<listGetObj.length;i++){
   var body=document.getElementsByTagName("body")[0];
   var id=document.createElement("p");
