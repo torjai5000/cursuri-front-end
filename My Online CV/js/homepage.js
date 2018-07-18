@@ -11,4 +11,16 @@ $(document).ready(function(){
       navesc.classList.remove("solid");
     }
   });
+  
+  var element=document.getElementsByClassName("element");
+  var title=document.getElementsByClassName("projectTitle");
+
+  for(let i=0; i<element.length;i++){
+    element[i].addEventListener("mouseover", function(){
+      title[i].style.visibility="visible";
+    })
+    element[i].addEventListener("mouseout", function(){
+      title[i].style.visibility="hidden";
+    }
+  )}
 });

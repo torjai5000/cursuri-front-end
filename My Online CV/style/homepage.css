@@ -43,8 +43,18 @@
   font-family: "brandon-grotesque", sans-serif;
 }
 
+h3{
+    font-size: 2.8em;
+    margin: 0 0 0 0;
+    clear: both;
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    color: #2b2b2b;
+}
+.text{
+  font-size: 1.4em;
+}
 #projects {
-  padding: 0;
+  padding: 40px 0;
   display: block;
   position: relative;
   margin: 0 15px;
@@ -63,19 +73,18 @@
 }
 
 img{
-  display: block;
   margin-left: auto;
   margin-right: auto;
   width:100%;
+  transition: all 200ms linear;
 }
 
 .element{
   margin:20px 0;
+  display: inline-block;
+  overflow: hidden;
+  transition: all 200ms linear;
 }
-
-/* .col-lg-4{
-  margin:20px 10px;
-} */
 
 .clearfix::after {
     content: "";
@@ -88,4 +97,35 @@ img{
   position:absolute;
   left: 50%;
   bottom:20px;
+}
+
+.projectImage{
+  box-sizing: border-box;
+}
+
+.projectImage:hover {
+    transform:scale(1.2);
+    transition: all 200ms linear;
+    opacity: 0.2;
+    filter: alpha(opacity=20);
+}
+.element:hover{
+  background-color:grey;
+  transition: all 200ms linear;
+}
+.projectTitle{
+  padding: 10px 12px 12px;
+  color: #fff;
+  font-size:25px;
+  font-weight: bold;
+  margin-bottom: 10px;
+  text-align:center;
+  width:92%;
+  position: absolute;
+  top: 50%;
+  margin: -20px auto 0 !important;
+  visibility:hidden;
+  transition: all 200ms linear;
+  pointer-events: none;
+  cursor: default;
 }
