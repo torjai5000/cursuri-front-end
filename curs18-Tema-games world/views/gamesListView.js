@@ -4,7 +4,7 @@ games.fetchData().then(function(){
   var containerEl=document.getElementById("table");
   for(var i=0;i<games.items.length;i++){
         var gameCont=document.createElement("div");
-    $(gameCont).addClass("col-md-3 col-sm-6");
+    $(gameCont).addClass("col-md-4 col-sm-6");
     containerEl.appendChild(gameCont);
         var oneGame=document.createElement("div");
     $(oneGame).addClass("thumbnail");
