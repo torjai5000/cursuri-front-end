@@ -23,4 +23,54 @@ $(document).ready(function(){
       title[i].style.visibility="hidden";
     }
   )}
+  
+  var aboutBut=document.getElementById("aboutBut");
+  var projectsBut=document.getElementById("projectsBut");
+  var contactBut=document.getElementById("contactBut");
+  var introContent=document.getElementById("introContent");
+  var projects=document.getElementById("projects");
+  var contactContent=document.getElementById("contactContent");
+  
+  
+  
+  $(aboutBut).click(function() {
+    
+    var currentWidth=$('body').css("width");    
+    var suffix = currentWidth.match(/\d+/);
+    var positionNR=suffix[0];
+    var position=$(introContent).offset().top;
+    if(positionNR>995){
+    var better=position-80;
+    $("body, html").animate({
+        scrollTop: better},
+        'slow');
+    }else{
+      var betterBig=position-200;
+    $("body, html").animate({
+        scrollTop: betterBig},
+        'slow');
+    }
+});
+  $(projectsBut).click(function() {
+    var currentWidth=$('body').css("width");    
+    var suffix = currentWidth.match(/\d+/);
+    var positionNR=suffix[0];
+    var position=$(projects).offset().top;
+    if(positionNR>995){
+    var better=position-80;
+    $("body, html").animate({
+        scrollTop: better},
+        'slow');
+    }else{
+      var betterBig=position-200;
+    $("body, html").animate({
+        scrollTop: betterBig},
+        'slow');
+    }
+});
+  $(contactBut).click(function() {
+    $("body, html").animate({
+        scrollTop: $(contactContent).offset().top},
+        'slow');
+});
 });

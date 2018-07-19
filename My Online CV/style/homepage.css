@@ -1,11 +1,19 @@
 .parallax { 
   background: url('../images/myself.jpg') no-repeat center center fixed;
   background-position: center 0px;
-  height: 760px;
+  height: 600px;
   position:relative;
   padding:0;
   margin:0;
-  background-size:cover;
+  background-size:contain;
+  z-index:-2;
+}
+
+@media (min-device-width: 450px){
+    .parallax{
+      height:760px;
+      background-size: cover;
+    }
 }
 
 #bannerText{
@@ -20,51 +28,72 @@
 .transNav{
   background-color:transparent;
   position:fixed;
-  z-index:2;
+  z-index:3;
   width:100%;
-  height:100px;
   transition: all 500ms linear;
+/*   height:100px; */
 }
 
 .solid{
   background-color:grey;
+/*   height:60px; */
   position:fixed;
-  z-index:2;
+  z-index:3;
   width:100%;
-  height:60px;
   transition: all 500ms linear;
 }
 
 #introContent{
+  padding: 120px 30px 120px 30px;
+  background: #e6e6e6;
+  font-size: 1.7em;
+  text-align: center;
+  font-family: "brandon-grotesque", sans-serif;
+}
+
+#contactContent{
   padding: 120px 0 120px;
-  background: #FAFAFA;
-  font-size: 2em;
+  background: #e6e6e6;
+  font-size: 1.3em;
   text-align: center;
   font-family: "brandon-grotesque", sans-serif;
 }
 
 h3{
-    font-size: 2.8em;
+    font-size: 1.5em;
     margin: 0 0 0 0;
     clear: both;
     font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
     color: #2b2b2b;
 }
+
+.inside{
+  color:#595959;
+}
+
+.important{
+  color:#262626;
+}
+
+.sectionHead {
+    padding: 0 0 15px!important;
+    margin: 0 30px 30px;
+    text-align: center;
+    position: relative;
+}
+
+.tit{
+  font-size:1.5em;
+}
 .text{
-  font-size: 1.4em;
+  font-size: 1.3em;
+  
 }
 #projects {
   padding: 40px 0;
   display: block;
   position: relative;
   margin: 0 15px;
-}
-
-.sectionHead {
-  padding: 0 0 15px!important;
-  margin: 0 30px 30px;
-  text-align: center;
-  position: relative;
 }
 
 .thumbs {
@@ -128,4 +157,9 @@ img{
   transition: all 200ms linear;
   pointer-events: none;
   cursor: default;
+}
+
+a[ id= "aboutBut" ]:target ~ #introContent{
+  -webkit-transform: translateY( 0px);
+  transform: translateY( 0px );
 }
